@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC95BF7C2B92846D005A715E /* MapaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95BF7B2B92846D005A715E /* MapaView.swift */; };
+		BCC669812B91310C00399C28 /* viagens.json in Resources */ = {isa = PBXBuildFile; fileRef = BCC669802B91310C00399C28 /* viagens.json */; };
+		BCC669852B91312100399C28 /* Dados.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC669832B91312100399C28 /* Dados.swift */; };
+		BCC669862B91312100399C28 /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC669842B91312100399C28 /* Viagem.swift */; };
+		BCC669892B91356000399C28 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC669882B91356000399C28 /* HeaderView.swift */; };
+		BCC6698B2B91376800399C28 /* CelulaViagemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC6698A2B91376800399C28 /* CelulaViagemView.swift */; };
 		BCE4F94B2B8EC284007B5298 /* AluraViagensSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE4F94A2B8EC284007B5298 /* AluraViagensSwiftUIApp.swift */; };
 		BCE4F94D2B8EC284007B5298 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE4F94C2B8EC284007B5298 /* ContentView.swift */; };
 		BCE4F94F2B8EC286007B5298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE4F94E2B8EC286007B5298 /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC95BF7B2B92846D005A715E /* MapaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaView.swift; sourceTree = "<group>"; };
+		BCC669802B91310C00399C28 /* viagens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = viagens.json; sourceTree = "<group>"; };
+		BCC669832B91312100399C28 /* Dados.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dados.swift; sourceTree = "<group>"; };
+		BCC669842B91312100399C28 /* Viagem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viagem.swift; sourceTree = "<group>"; };
+		BCC669882B91356000399C28 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		BCC6698A2B91376800399C28 /* CelulaViagemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelulaViagemView.swift; sourceTree = "<group>"; };
 		BCE4F9472B8EC284007B5298 /* AluraViagensSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AluraViagensSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE4F94A2B8EC284007B5298 /* AluraViagensSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AluraViagensSwiftUIApp.swift; sourceTree = "<group>"; };
 		BCE4F94C2B8EC284007B5298 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +44,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BCC669822B91312100399C28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCC669832B91312100399C28 /* Dados.swift */,
+				BCC669842B91312100399C28 /* Viagem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BCC669872B91352D00399C28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCE4F94C2B8EC284007B5298 /* ContentView.swift */,
+				BCC669882B91356000399C28 /* HeaderView.swift */,
+				BCC6698A2B91376800399C28 /* CelulaViagemView.swift */,
+				BC95BF7B2B92846D005A715E /* MapaView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BCE4F93E2B8EC283007B5298 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				BCE4F94A2B8EC284007B5298 /* AluraViagensSwiftUIApp.swift */,
-				BCE4F94C2B8EC284007B5298 /* ContentView.swift */,
+				BCC669872B91352D00399C28 /* View */,
+				BCC669822B91312100399C28 /* Models */,
+				BCC669802B91310C00399C28 /* viagens.json */,
 				BCE4F94E2B8EC286007B5298 /* Assets.xcassets */,
 				BCE4F9502B8EC286007B5298 /* Preview Content */,
 			);
@@ -127,6 +161,7 @@
 			files = (
 				BCE4F9522B8EC286007B5298 /* Preview Assets.xcassets in Resources */,
 				BCE4F94F2B8EC286007B5298 /* Assets.xcassets in Resources */,
+				BCC669812B91310C00399C28 /* viagens.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC669892B91356000399C28 /* HeaderView.swift in Sources */,
+				BC95BF7C2B92846D005A715E /* MapaView.swift in Sources */,
+				BCC669862B91312100399C28 /* Viagem.swift in Sources */,
 				BCE4F94D2B8EC284007B5298 /* ContentView.swift in Sources */,
+				BCC669852B91312100399C28 /* Dados.swift in Sources */,
 				BCE4F94B2B8EC284007B5298 /* AluraViagensSwiftUIApp.swift in Sources */,
+				BCC6698B2B91376800399C28 /* CelulaViagemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +318,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,8 +348,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
